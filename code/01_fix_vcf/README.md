@@ -1,6 +1,6 @@
 
 ## Fix original VCF file from CliVar:
-### env
+### Env
  - miniconda: pysam_3, boinfo;  
  - package(pysam, numpy, matplotlib)
 

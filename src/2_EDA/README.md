@@ -7,16 +7,16 @@ original data frame `df`: <br>
 middle data frame `df_t`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/df_t.png"  width="300" height="150"> 
 
-### 1. density histogram: an entire distribution for each variable
+### 1) density histogram: an entire distribution for each variable
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/1.png" width="500" height="300">
 
-### 2. density histogram: for each variable, show a distribution of each class
+### 2) density histogram: for each variable, show a distribution of each class
 CADD: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/2-CADD.png" width="500" height="300"> <br>
 RankScore: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/2-RankSore.png" width="500" height="300">
 
-### 3. scatter plot: CADD vs RankScore in each class
+### 3) scatter plot: CADD vs RankScore in each class
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/3.png" width="500" height="300"> <br>
 R: correlation coefficient; Pearson
   
@@ -24,7 +24,7 @@ R: correlation coefficient; Pearson
 - Pearson  (only for linear relationships)
 - Kendall  (test the similarities in the ordering of data when it is ranked by quantities)
 
-### 4. scatter + marginal plot
+### 4) scatter + marginal plot
 marginal plot: density <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/4-density.png" width="450" height="350">
 
@@ -36,7 +36,7 @@ original data frame `df1`: <br>
 middle data frame `df1_new`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1_new.png"  width="400" height="150"> 
 
-### 1. multiple histograms from grouped data
+### 1) multiple histograms from grouped data
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/1.png" width="600" height="400"> <br>
 
 * y-axis in density histogram/barplot: 

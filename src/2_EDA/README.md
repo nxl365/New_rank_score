@@ -66,3 +66,31 @@ middle data frame `df_1_m`: <br>
 
 ### 2) Welch's t-test: not paired, unequal variance
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/2.png"  width="600" height="200"> 
+
+
+## 04
+original data frame `df_1`: <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/04/df_1.png"  width="400" height="150"> 
+
+### 1) PCA
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/04/1.png" width="600" height="400"> <br>
+
+* eigenvector: correlated coefficient/loading show vector of parameter on the plot; give how much loading/relationship each parameter has on PC
+* eigenvalue: how much variance the PCs account for original data
+* PC score: correlation between PC vs samples.
+  
+```
+pca <- prcomp(df,scale=TRUE)
+
+summary(pca)   # check eigenvalue: accounts for variance of all original data
+pca            # pca$rotation--check eigenvector: loading/correlation coefficient ; number of PCs == number of parameters/variables
+               # correlation between PC vs parameter
+pca$x          # check PC scores: correlation between PC  vs  samples
+```
+
+
+### 2) heatmap
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/04/2.png" width="600" height="400"> <br>
+
+
+

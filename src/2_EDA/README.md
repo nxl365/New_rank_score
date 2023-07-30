@@ -4,6 +4,9 @@
 data frame `df`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/df.png"  width="350" height="200"> 
 
+data frame `df_t`: <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/df_t.png"  width="350" height="200"> 
+
 ### 1. density histogram: a entire distribution for each variable
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/1.png" width="500" height="300">
 

@@ -107,9 +107,10 @@ original data frame `df_1`: <br>
   <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_expected%20frequency.png"  width="700" height="150"> 
 <br>
 <br>
+
 **`BIOTYPE`**:<br>
 > * expected frequency<br>
-  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-2%20bio_fre.png"  width="500" height="80"> <br>
+  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-2%20bio_fre.png"  width="300" height="40"> <br>
 
 
 ### 2) mosaic plots: 

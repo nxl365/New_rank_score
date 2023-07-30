@@ -56,7 +56,7 @@ R:    give meanings of different y-axis values (`count, count, density…`) in b
 
 ## 03
 original data frame `df_1`: <br>
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/df_1.png"  width="550" height="150"> 
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/df_1.png"  width="650" height="150"> 
 
 middle data frame `df_1_m`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/df_m.png"  width="400" height="150"> 
@@ -65,4 +65,4 @@ middle data frame `df_1_m`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/1.png" width="600" height="400"> <br>
 
 ### 2) Welch's t-test: not paired, unequal variance
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/2.png"  width="550" height="150"> 
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/2.png"  width="550" height="300"> 

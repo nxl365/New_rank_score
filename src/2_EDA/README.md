@@ -103,13 +103,13 @@ original data frame `df_1`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_chi-square.png"  width="300" height="100"> <br>
 > * expected frequency of each category in the variable:<br>
 >   if a category's smallest expected frequency < 5,  Chi-squared here approximation may be incorrect<br>
-
-  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_expected%20frequency.png"  width="700" height="150"> combined some categories of ORIGIN <br>
-
-
+    ORIGIN--combined some categories of ORIGIN 
+  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_expected%20frequency.png"  width="700" height="150"> 
+<br>
+<br>
 **`BIOTYPE`**:<br>
 > * expected frequency<br>
-  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-2%20bio_fre.png"  width="500" height="50"> <br>
+  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-2%20bio_fre.png"  width="500" height="80"> <br>
 
 
 ### 2) mosaic plots: 

@@ -51,5 +51,5 @@ R:    give meanings of different y-axis values (`count, count, density…`) in b
 
 `y=..density..` : density curve (having the area of the bars sum to 1)
 ```
-reference: **[Normalizing y-axis in histograms in R ggplot to proportion](https://stackoverflow.com/questions/11766856/normalizing-y-axis-in-histograms-in-r-ggplot-to-proportion)**
+>> reference: **[Normalizing y-axis in histograms in R ggplot to proportion](https://stackoverflow.com/questions/11766856/normalizing-y-axis-in-histograms-in-r-ggplot-to-proportion)**
 

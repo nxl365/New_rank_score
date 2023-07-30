@@ -1,13 +1,13 @@
 # Introduction of each EDA code
 
 ## 01 
-data frame `df`: <br>
+original data frame `df`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/df.png"  width="300" height="150"> 
 
-data frame `df_t`: <br>
+middle data frame `df_t`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/df_t.png"  width="300" height="150"> 
 
-### 1. density histogram: a entire distribution for each variable
+### 1. density histogram: an entire distribution for each variable
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/1.png" width="500" height="300">
 
 ### 2. density histogram: for each variable, show a distribution of each class
@@ -26,4 +26,12 @@ R: correlation coefficient; Pearson
 
 ### 4. scatter + marginal plot
 marginal plot: density <br>
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/4-density.png" width="500" height="400">
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/4-density.png" width="450" height="350">
+
+
+## 02
+original data frame `df1`: <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1.png"  width="300" height="150"> 
+
+middle data frame `df1_new`: <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1_new.png"  width="300" height="150"> 

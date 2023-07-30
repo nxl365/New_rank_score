@@ -94,3 +94,45 @@ pca$x          # check PC scores: correlation between PC  vs  samples
 
 
 
+## 05
+original data frame `df_1`: <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/df_1.png"  width="400" height="150"> 
+
+### 1) chi-square test of independence
+**`ORIGIN`**:<br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_chi-square.png"  width="600" height="200"> <br>
+> expected frequency of each category in the variable:
+> if a category's smallest expected frequency < 5,  Chi-squared here approximation may be incorrect
+
+  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-%20ori_expected%20frequency.png"  width="600" height="200"> combined some categories of ORIGIN <br>
+
+
+**`BIOTYPE`**:<br>
+> expected frequency
+  <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/2-2%20bio_fre.png"  width="600" height="200"> <br>
+
+
+### 2) mosaic plots: 
+**type 1-1**
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/1-1.png" width="500" height="300">
+
+**type 1-2**
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/1-2.png" width="500" height="300">
+
+**type 2-1**
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/1-3.png" width="500" height="300">
+
+**type 2-2**
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/05/1-4.png" width="500" height="300">
+
+
+  
+  
+
+
+
+
+
+
+
+

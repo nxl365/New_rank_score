@@ -37,7 +37,7 @@ middle data frame `df1_new`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1_new.png"  width="400" height="150"> 
 
 ### 1. multiple histograms from grouped data
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/1.png" width="500" height="400"> <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/1.png" width="500" height="500"> <br>
 
 * y-axis in density histogram/barplot: 
 ```

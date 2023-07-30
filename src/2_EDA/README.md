@@ -37,9 +37,9 @@ middle data frame `df1_new`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1_new.png"  width="400" height="150"> 
 
 ### 1. multiple histograms from grouped data
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/1.png" width="450" height="350"> 
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/1.png" width="450" height="350"> <br>
 
-**[Normalizing y-axis in histograms in R ggplot to proportion](https://stackoverflow.com/questions/11766856/normalizing-y-axis-in-histograms-in-r-ggplot-to-proportion)**
+reference: **[Normalizing y-axis in histograms in R ggplot to proportion](https://stackoverflow.com/questions/11766856/normalizing-y-axis-in-histograms-in-r-ggplot-to-proportion)**
 ```
 R:
 give meanings of different y-axis values (`count, count, density…`) in barplot

@@ -29,6 +29,13 @@ marginal plot: density <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/01/4-density.png" width="450" height="350">
 
 
+### 5) Spearman: non-linear correlation between CADD and RankScore
+(rho = 0.72, p = 0): <br>
+  rho = 0.72, which indicates a strong positive correlation between the two variables. <br>
+  p = 0, which is less than 0.05, there is a significant correlation between the two variables
+
+
+
 ## 02
 original data frame `df1`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/02/df1.png"  width="550" height="150"> 

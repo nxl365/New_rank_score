@@ -1,8 +1,7 @@
 
 ## Fix original VCF file from CliVar:
-### Env
- - miniconda: pysam_3, boinfo;  
- - package(pysam, numpy, matplotlib)
+### Env  
+ - package(pysam, numpy)
 
 ### fixvcf.py
 1. add new headers: `FORMAT "GT" "DP" "AD" "GQ"`; `SAMPLE`  
@@ -14,9 +13,21 @@
   - AD: 1st(ref)—normal distribution, close to 0 (mean=0,SD=5,x ≥0); 2nd(alt)=DP-1st
 3. There are some tuple `alt` with none values in ori records, change to string `.`; and `ref` is already string, and can’t be none, so didn't change
 
-### delno_fixvcf.py
-  - based on `fixvcf.py`, do not add the original record line with none alt value
 
+### useage
+make sure you have the vcf.gz file and it's index file, and fill in the for example : 
+```
+clinvar_20221113.vcf.gz
+clinvar_20221113.vcf.gz.tbi
+```
+```
+in_file = `clinvar_20221113.vcf.gz`
+out_file = `clinvar_20221113_fixed.vcf.gz`
+```
+run this command
+```
+python3 fixvcf.py
+```
 
    
 

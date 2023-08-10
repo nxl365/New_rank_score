@@ -4,3 +4,10 @@ After conducting exploratory data analysis (EDA) to examine the variables' distr
 
 The LG model assigns a binary class label (benign or pathogenic) and provides a score ranging from 0 to 1. Lower scores indicate benign variants, while higher scores indicate pathogenic variants. Currently, a threshold of 0.5 is used to classify the variants. It has the potential to enhance the ranking of genetic rare-disease diagnostics at Clinical Genomics Stockholm and contribute to further advancements in rare disease research.
 
+## Getting started
+1. Clone the repo
+2. install a conda environment with the necessary dependencies
+```
+conda env create --name rank_score -f environment.yml
+```
+

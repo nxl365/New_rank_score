@@ -8,6 +8,6 @@ The LG model assigns a binary class label (benign or pathogenic) and provides a 
 1. Clone the repo
 2. install a conda environment with the necessary dependencies
 ```
-conda env create --name rank_score -f environment.yml
+conda env create --name rank_score -f RS_env.yml
 ```
 

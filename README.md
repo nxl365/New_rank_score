@@ -10,4 +10,15 @@ The LG model assigns a binary class label (benign or pathogenic) and provides a 
 ```
 conda env create --name rank_score -f RS_env.yml
 ```
+3. fix your MIP annotated VCF file
+4. run model
+```
+python 03_script_12feats_LG_CJP_imbalance_trybash.py \
+--in ./test_data/MIPannotated_KIpathogenic.vcf.gz \
+--cons ./variants_consequences.txt \
+--model ./LG_model/02_12feats_CJP5-5_LG.joblib \
+--pre ./LG_model/02_12feats_CJP5-5_preprocessor.joblib \
+--info ttt_info.csv \
+--out ttt_out.vcf.gz
+```
 

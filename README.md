@@ -13,19 +13,45 @@ conda env create --name rank_score -f RS_env.yml
 
 ## Pipeline
 
-1. First, annotate the original `*.vcf.gz` file using the [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework). Before doing so, ensure that the input `*.vcf.gz` file has the required `FORMAT` and `SAMPLE` columns. If needed, use the provided Python script [fixvcf.py](https://github.com/nxl365/New_rank_score/tree/main/src/1_fix_vcf) to add these necessary formats to the input file.
+1. get annotated `vcf.gz` file:
+First, annotate the original `*.vcf.gz` file using the [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework). Before doing so, ensure that the input `*.vcf.gz` file has the required `FORMAT` and `SAMPLE` columns. If needed, use the provided Python script [fixvcf.py](https://github.com/nxl365/New_rank_score/tree/main/src/1_fix_vcf) to add these necessary formats to the input file.
 
-
-
-3. fix your MIP annotated VCF file
-4. run model
+2. run the script:
+help:
 ```
-python 03_script_12feats_LG_CJP_imbalance_trybash.py \
---in ./test_data/MIPannotated_KIpathogenic.vcf.gz \
+Please make sure all required parameters are given
+Usage: python finalscript_LG4_12feats_CJP_AF_args.py <OPTIONS>
+
+Required Parameters:
+--in       <in_name>.vcf.gz, the input annotated file 
+--cons      `variants_consequences.txt`, a list of consequences of variants given by the Ensembl Variant Effect Predictor 
+           (VEP), https://asia.ensembl.org/info/genome/variation/prediction/predicted_data.html
+--model    `LG3_12feats_CJP.joblib`, the fitted LG model 
+--pre      `preprocessor3_12feats_CJP.joblib`, the fitted preprocessor
+--info     <INFO_extracted>.csv, the extracted features/information from annotated <name>.vcf.gz
+--out      <out_name>.vcf.gz, the final output file
+```
+
+command for example:  
+```
+python finalscript_LG4_12feats_CJP_AF_args.py \
+--in ./test_data/test_MIPannotated_part_clinvar_221113.vcf.gz \
 --cons ./variants_consequences.txt \
---model ./LG_model/02_12feats_CJP5-5_LG.joblib \
---pre ./LG_model/02_12feats_CJP5-5_preprocessor.joblib \
---info ttt_info.csv \
---out ttt_out.vcf.gz
+--model ./LG_model/LG3_12feats_CJP.joblib \
+--pre ./LG_model/preprocessor3_12feats_CJP.joblib \
+--info test_clinvar_info.csv \
+--out test_clinvar_out.vcf.gz
 ```
+
+prepare your own input:  --in 
+like the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz`  
+
+you will get 2 outputs:  --info , --out 
+the extracted features `test_clinvar_info.csv`, the final file with predictions and scores from LG model `test_clinvar_out.vcf.gz`  
+
+Other parameters are stored in this repo
+
+
+
+
 

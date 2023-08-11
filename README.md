@@ -16,7 +16,8 @@ conda env create --name rank_score -f RS_env.yml
 1. get annotated `vcf.gz` file:
 First, annotate the original `*.vcf.gz` file using the [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework). Before doing so, ensure that the input `*.vcf.gz` file has the required `FORMAT` and `SAMPLE` columns. If needed, use the provided Python script [fixvcf.py](https://github.com/nxl365/New_rank_score/tree/main/src/1_fix_vcf) to add these necessary formats to the input file.
 
-2. run the script:  
+2. run the script:
+
 **help**
 ```
 Please make sure all required parameters are given

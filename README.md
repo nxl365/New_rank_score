@@ -12,7 +12,7 @@ conda env create --name rank_score -f RS_env.yml
 ```
 
 ## Pipeline
-1. first, the original file `*.vcf.gz` should be annotated by Mutation Identification Pipeline framework (MIP)[https://github.com/Clinical-Genomics/MIP] , Before running the MIP pipeline for variant annotation, it is important to ensure that the input VCF file has a specific format that includes ’FORMAT’ and ’SAMPLE’ columns. To meet this requirement, a Python script ’fixvcf.py’ was developed that adds the necessary columns to the input files.
+1. first, the original file `*.vcf.gz` should be annotated by [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework), Before running the MIP pipeline for variant annotation, it is important to ensure that the input VCF file has a specific format that includes ’FORMAT’ and ’SAMPLE’ columns. To meet this requirement, a Python script ’fixvcf.py’ was developed that adds the necessary columns to the input files.
 
 3. fix your MIP annotated VCF file
 4. run model

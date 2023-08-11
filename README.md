@@ -45,13 +45,12 @@ python finalscript_LG4_12feats_CJP_AF_args.py \
 ```
 
 * prepare your own input:  `--in`
-  - for test, you can try the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz` which is a part of the [public ClinVar](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/weekly/clinvar_20221113.vcf.gz)  
-  or  
+  - for test, you can try the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz` which is a part of the [public ClinVar](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/weekly/clinvar_20221113.vcf.gz)  OR
   - `MIPannotated_KIpathogenic.vcf.gz` which includes 977 pathogenic variants detected by the Genomic Medicine Center Karolinska-Rare Diseases ([GMCK-RD](https://pubmed.ncbi.nlm.nih.gov/33726816/)) and submitted to [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/?term=SUB8639822) 
 
 * you will get 2 outputs:  `--info , --out`  
-           the extracted features `test_info.csv`  
-           the final file with predictions and scores from LG model `test_out.vcf.gz`    
+ - the extracted features `test_info.csv`  
+ - the final file with predictions and scores from LG model `test_out.vcf.gz`    
 
 * Other parameters are stored in this repo  
 

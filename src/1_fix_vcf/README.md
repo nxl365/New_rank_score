@@ -2,7 +2,7 @@
 ## Fix original VCF formate for MIP annotation
 
 ## Module 
- - numpy, pysam, samtools(bgzip, tabix) ( for Mac M1, `brew install samtools` )
+ - numpy, [pysam](https://github.com/pysam-developers/pysam), samtools(bgzip, tabix) ( for Mac M1, `brew install samtools` )
 
 ## Intro
 Script: `fixvcf.py`

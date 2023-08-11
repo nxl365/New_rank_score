@@ -16,15 +16,15 @@ conda env create --name rank_score -f RS_env.yml
 1. get annotated `vcf.gz` file:
 First, annotate the original `*.vcf.gz` file using the [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework). Before doing so, ensure that the input `*.vcf.gz` file has the required `FORMAT` and `SAMPLE` columns. If needed, use the provided Python script [fixvcf.py](https://github.com/nxl365/New_rank_score/tree/main/src/1_fix_vcf) to add these necessary formats to the input file.
 
-2. run the script:
-help:
+2. run the script:  
+**help**
 ```
 Please make sure all required parameters are given
 Usage: python finalscript_LG4_12feats_CJP_AF_args.py <OPTIONS>
 
 Required Parameters:
 --in       <in_name>.vcf.gz, the input annotated file 
---cons      `variants_consequences.txt`, a list of consequences of variants given by the Ensembl Variant Effect Predictor 
+--cons     `variants_consequences.txt`, a list of consequences of variants given by the Ensembl Variant Effect Predictor 
            (VEP), https://asia.ensembl.org/info/genome/variation/prediction/predicted_data.html
 --model    `LG3_12feats_CJP.joblib`, the fitted LG model 
 --pre      `preprocessor3_12feats_CJP.joblib`, the fitted preprocessor
@@ -32,7 +32,7 @@ Required Parameters:
 --out      <out_name>.vcf.gz, the final output file
 ```
 
-command for example:  
+**command for example**  
 ```
 python finalscript_LG4_12feats_CJP_AF_args.py \
 --in ./test_data/test_MIPannotated_part_clinvar_221113.vcf.gz \
@@ -43,13 +43,13 @@ python finalscript_LG4_12feats_CJP_AF_args.py \
 --out test_clinvar_out.vcf.gz
 ```
 
-prepare your own input:  --in 
+prepare your own input:  --in   
 like the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz`  
 
-you will get 2 outputs:  --info , --out 
-the extracted features `test_clinvar_info.csv`, the final file with predictions and scores from LG model `test_clinvar_out.vcf.gz`  
+you will get 2 outputs:  --info , --out   
+the extracted features `test_clinvar_info.csv`, the final file with predictions and scores from LG model `test_clinvar_out.vcf.gz`    
 
-Other parameters are stored in this repo
+Other parameters are stored in this repo  
 
 
 

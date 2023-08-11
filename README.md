@@ -4,12 +4,16 @@ A supervised logistic regression (LG) model is built using publicly available Cl
 
 The LG model not only provides the hard binary class predictions (benign and pathogenic) but also assigns a score based on the predicted probabilities of the model ranging from 0 to 1. Currently, a threshold of 0.5 is used, if a score >= 0.5, the model classifies it as pathogenic; < 0.5, it's deemed benign. Scores near the 0.5 threshold (e.g., 0.55 or 0.49) reflect lower classification confidence. However, probabilities close to 0 (benign) or 1 (pathogenic) denote high model confidence in its prediction. The model has the potential to enhance the ranking of genetic rare-disease diagnostics at Clinical Genomics Stockholm and contribute to further advancements in rare disease research.
 
-## Getting started
-1. Clone the repo
+## Setup
+1. Clone this repo
 2. install a conda environment with the necessary dependencies
 ```
 conda env create --name rank_score -f RS_env.yml
 ```
+
+## Pipeline
+1. first, the original file `*.vcf.gz` should be annotated by Mutation Identification Pipeline framework (MIP)[https://github.com/Clinical-Genomics/MIP] , Before running the MIP pipeline for variant annotation, it is important to ensure that the input VCF file has a specific format that includes ’FORMAT’ and ’SAMPLE’ columns. To meet this requirement, a Python script ’fixvcf.py’ was developed that adds the necessary columns to the input files.
+
 3. fix your MIP annotated VCF file
 4. run model
 ```

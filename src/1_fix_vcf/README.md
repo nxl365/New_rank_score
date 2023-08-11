@@ -27,14 +27,14 @@ tabix -fp vcf <name>.vcf.gz
 ```
  for example, 2 files are required before we run the script:
 ```
-test_data/pathogenic.vcf.gz
-test_data/pathogenic.vcf.gz.tbi
+test_data/KIpathogenic.vcf.gz
+test_data/KIpathogenic.vcf.gz.tbi
 ```
 
 2. fill input and output:
 ```
-in_file = test_data/pathogenic.vcf.gz
-out_file = test_data/pathogenic_fixed.vcf.gz
+in_file = test_data/KIpathogenic.vcf.gz
+out_file = test_data/KIpathogenic_fixed.vcf.gz
 ```
 
 3. run this command

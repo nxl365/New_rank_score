@@ -43,11 +43,12 @@ python finalscript_LG4_12feats_CJP_AF_args.py \
 --out test_clinvar_out.vcf.gz
 ```
 
-prepare your own input:  --in   
+prepare your own input:  `--in`   
 like the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz`  
 
-you will get 2 outputs:  --info , --out   
-the extracted features `test_clinvar_info.csv`, the final file with predictions and scores from LG model `test_clinvar_out.vcf.gz`    
+you will get 2 outputs:  `--info , --out`  
+the extracted features `test_clinvar_info.csv`  
+the final file with predictions and scores from LG model `test_clinvar_out.vcf.gz`    
 
 Other parameters are stored in this repo  
 

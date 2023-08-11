@@ -1,4 +1,4 @@
-# A Rank Score Model of Variants Prioritization for Rare Disease: LG model
+# LG model: A Rank Score Model of Variants Prioritization for Rare Disease
 
 A supervised logistic regression (LG) model is built using publicly available ClinVar data and our in-house Justhusky and KI pathogenic dataset (CJP) with 12 features, incorporating an allele frequency (AF) filtering process to prioritize genetic rare disease variants, specifically SNVs/InDels. 
 

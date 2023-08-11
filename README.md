@@ -12,20 +12,20 @@ script `finalscript_LG4_12feats_CJP_AF_args.py`
 
 The pipeline consists of four steps:  
 1. Extract annotation data/features from the `INFO` column of MIPannotated `vcf.gz` file:  
-   * outside `CSQ`, only some features are chosen:  
-   ```
-   'CADD','AF_ESP','AF_EXAC','AF_TGP','Frq','GNOMADAF','GNOMADAF_popmax','Hom','ORIGIN','SPIDEX','SWEGENAF'
-   ```
+   * outside `CSQ`, some features are chosen  
    * inside `CSQ`, all features are collected:  
     since there are many overlapping Ensembl transcripts for each variant, we only select one transcript with the most severe ’Consequence’ and where the ’CANONICAL’ flag is set to ’YES’ out of them. And then get all features of it.
 
 2. Data preprocessing and prediction:  
-   select features and do preprocessing by fitted preprocessor, get the prediction(benign/pathogenic) and score/probability by fitted LG model
+   select 12 features, and do preprocessing by fitted preprocessor, get the prediction(benign/pathogenic) and score/probability by fitted LG model
+   ```
+   'CADD','Frq','GNOMADAF_popmax','Consequence','BIOTYPE','PolyPhen','REVEL_score','pLI_gene_value','SpliceAI_pred_DS_AG','SpliceAI_pred_DS_AL','SpliceAI_pred_DS_DG','SpliceAI_pred_DS_DL'
+   ```
 
-3. Incorporating Allele frequency filtering:  
-   check if MAF > 0.01 and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing the score. The MAF is calculated as the minimum value among the AF-related variables, including ’AF_ESP’, ’AF_EXAC’, ’AF_TGP’, ’Frq’, ’GNOMADAF_popmax’, and ’SWEGENAF’, if any of these variables have a null value, it is skipped in the calculation
+4. Incorporating Allele frequency filtering:  
+  If MAF > 0.01 and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing the score. The MAF is calculated as the minimum value among the AF-related variables, including ’AF_ESP’, ’AF_EXAC’, ’AF_TGP’, ’Frq’, ’GNOMADAF_popmax’, and ’SWEGENAF’, if any of these variables have a null value, it is skipped in the calculation
 
-5. write the output prediction and score back to `vcf.gz` file
+5. write the prediction and score output back to `vcf.gz` file
 
    
    

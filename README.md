@@ -44,11 +44,11 @@ python finalscript_LG4_12feats_CJP_AF_args.py \
 ```
 
 prepare your own input:  `--in`   
-for test, you can try the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz`  or  `MIPannotated_KIpathogenic.vcf.gz`
+           for test, you can try the annotated `test_MIPannotated_part_clinvar_221113.vcf.gz`  or  `MIPannotated_KIpathogenic.vcf.gz`
 
 you will get 2 outputs:  `--info , --out`  
-the extracted features `test_info.csv`  
-the final file with predictions and scores from LG model `test_out.vcf.gz`    
+           the extracted features `test_info.csv`  
+           the final file with predictions and scores from LG model `test_out.vcf.gz`    
 
 Other parameters are stored in this repo  
 

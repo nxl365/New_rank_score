@@ -18,17 +18,17 @@ Script: `fixvcf.py`
 
 
 ## useage
-1.  prepare files:
-First you need to make sure the `vcf` file is compressed as a `vcf.gz` file.
+1.  prepare files:  
+First you need to make sure the `vcf` file is compressed as a `vcf.gz` file.  
 Next, create a new `.tbi` index file of it. ( `-f` command will write over an old index file that may be outdated or corrupted; `-p` command will tell tabix to use the "vcf" file format.)
 ```
 bgzip -c *.vcf > *.vcf.gz     
 tabix -fp vcf *.vcf.gz          
 ```
-for example, 2 files are required before we run the script:
+ for example, 2 files are required before we run the script:
 ```
-pathogenic.vcf.gz
-pathogenic.vcf.gz.tbi
+test_data/pathogenic.vcf.gz
+test_data/pathogenic.vcf.gz.tbi
 ```
 
 2. fill input and output:

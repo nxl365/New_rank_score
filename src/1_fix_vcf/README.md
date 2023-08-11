@@ -22,8 +22,8 @@ Script: `fixvcf.py`
 First you need to make sure the `vcf` file is compressed as a `vcf.gz` file.  
 Next, create a new `.tbi` index file of it. ( `-f` command will write over an old index file that may be outdated or corrupted; `-p` command will tell tabix to use the "vcf" file format.)
 ```
-bgzip -c *.vcf > *.vcf.gz     
-tabix -fp vcf *.vcf.gz          
+bgzip -c <name>.vcf > <name>.vcf.gz     
+tabix -fp vcf <name>.vcf.gz          
 ```
  for example, 2 files are required before we run the script:
 ```

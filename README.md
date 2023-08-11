@@ -4,6 +4,33 @@ A supervised logistic regression (LG) model is built using publicly available Cl
 
 The LG model not only provides the hard binary class predictions (benign and pathogenic) but also assigns a score based on the predicted probabilities of the model ranging from 0 to 1. Currently, a threshold of 0.5 is used, if a score >= 0.5, the model classifies it as pathogenic; < 0.5, it's deemed benign. Scores near the 0.5 threshold (e.g., 0.55 or 0.49) reflect lower classification confidence. However, probabilities close to 0 (benign) or 1 (pathogenic) denote high model confidence in its prediction. The model has the potential to enhance the ranking of genetic rare-disease diagnostics at Clinical Genomics Stockholm and contribute to further advancements in rare disease research.
 
+
+## Pipeline
+script `finalscript_LG4_12feats_CJP_AF_args.py`  
+
+The pipeline consists of four steps:  
+1. Extract annotation data/features from the `INFO` column of MIPannotated `vcf.gz` file:
+   outside `CSQ`, only some features are chosen:
+   ```
+   'CADD','AF_ESP','AF_EXAC','AF_TGP','Frq','GNOMADAF','GNOMADAF_popmax','Hom','ORIGIN','SPIDEX','SWEGENAF'
+   ```
+   inside `CSQ`, all features are collected:
+   since there are many overlapping Ensembl transcripts for each variant, we only select one transcript with the most severe ’Consequence’ and where the ’CANONICAL’ flag is set to ’YES’ out of them. And then get all features of it.
+
+2. Data preprocessing and prediction:
+   select features and do preprocessing by fitted preprocessor, get the prediction(benign/pathogenic) and score/probability by fitted LG model
+
+3. Incorporating Allele frequency filtering:
+   check if MAF > 0.01 and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing the score. The MAF is calculated as the minimum value among the AF-related variables, including ’AF_ESP’, ’AF_EXAC’, ’AF_TGP’, ’Frq’, ’GNOMADAF_popmax’, and ’SWEGENAF’, if any of these variables have a null value, it is skipped in the calculation
+
+5. write the output prediction and score back to `vcf.gz` file
+
+   
+   
+
+
+
+
 ## Setup
 1. Clone this repo
 2. install a conda environment with the necessary dependencies
@@ -11,7 +38,7 @@ The LG model not only provides the hard binary class predictions (benign and pat
 conda env create --name rank_score -f RS_env.yml
 ```
 
-## Pipeline
+## Usage
 
 1. get annotated `vcf.gz` file:
 First, annotate the original `*.vcf.gz` file using the [MIP](https://github.com/Clinical-Genomics/MIP) (Mutation Identification Pipeline framework). Before doing so, ensure that the input `*.vcf.gz` file has the required `FORMAT` and `SAMPLE` columns. If needed, use the provided Python script [fixvcf.py](https://github.com/nxl365/New_rank_score/tree/main/src/1_fix_vcf) to add these necessary formats to the input file.

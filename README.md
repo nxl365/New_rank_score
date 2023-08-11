@@ -6,11 +6,10 @@ The LG model not only provides the hard binary class predictions (benign and pat
 
 
 ## Pipeline
-<img src="https://github.com/nxl365/New_rank_score/blob/main/pipeline.png"  width="1000" height="120">   
+<img src="https://github.com/nxl365/New_rank_score/blob/main/pipeline.png"  width="1000" height="130">   
 
-script `finalscript_LG4_12feats_CJP_AF_args.py`  
+The pipeline (main script `finalscript_LG4_12feats_CJP_AF_args.py`) consists of four steps:  
 
-The pipeline consists of four steps:  
 1. Extract annotation data/features from the `INFO` column of MIPannotated `vcf.gz` file:  
    * outside `CSQ`, some features are chosen  
    * inside `CSQ`, all features are collected:  
@@ -25,7 +24,7 @@ The pipeline consists of four steps:
 4. Incorporating Allele frequency filtering:  
   If MAF > 0.01 and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing the score. The MAF is calculated as the minimum value among the AF-related variables, including ’AF_ESP’, ’AF_EXAC’, ’AF_TGP’, ’Frq’, ’GNOMADAF_popmax’, and ’SWEGENAF’, if any of these variables have a null value, it is skipped in the calculation
 
-5. write the prediction and score output back to `vcf.gz` file
+5. Writing the prediction and score output back to `vcf.gz` file
 
    
    

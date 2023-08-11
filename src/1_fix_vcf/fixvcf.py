@@ -8,8 +8,8 @@ import numpy as np
 from numpy import random
 
 
-in_file = "clinvar_20221113.vcf.gz"
-out_file = "fixed.vcf.gz"
+in_file = "test_data/pathogenic.vcf.gz"
+out_file = "test_data/pathogenic.vcf.gz.tbi"
 
 # read the input vcf file
 with pysam.VariantFile(in_file, "r") as vcf_in:

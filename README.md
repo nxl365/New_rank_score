@@ -6,7 +6,7 @@ The LG model not only provides the hard binary class predictions (benign and pat
 
 
 ## Pipeline
-<img src="https://github.com/nxl365/New_rank_score/blob/main/pipeline.png"  width="700" height="150">   
+<img src="https://github.com/nxl365/New_rank_score/blob/main/pipeline.png"  width="1000" height="150">   
 
 script `finalscript_LG4_12feats_CJP_AF_args.py`  
 

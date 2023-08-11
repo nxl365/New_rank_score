@@ -32,6 +32,7 @@ test_data/KIpathogenic.vcf.gz.tbi
 ```
 
 2. fill input and output:
+for example:
 ```
 in_file = test_data/KIpathogenic.vcf.gz
 out_file = test_data/KIpathogenic_fixed.vcf.gz

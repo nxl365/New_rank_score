@@ -84,15 +84,14 @@ python finalscript_LG4_12feats_CJP_AF_args.py \
 
 ## test data
 
-* `test_MIPannotated_part_clinvar_221113.vcf.gz`: a part of the [public ClinVar](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/weekly/clinvar_20221113.vcf.gz) after MIP annotated  
-* `test_clinvar_info.csv`: output extracted features from input `test_MIPannotated_part_clinvar_221113.vcf.gz`  
-* `test_clinvar_out.vcf.gz`: output with predictions and scores of LG model from input `test_MIPannotated_part_clinvar_221113.vcf.gz`  
-  
-* `KIpathogenic.vcf`: includes 977 pathogenic variants detected by the Genomic Medicine Center Karolinska-Rare Diseases ([GMCK-RD](https://pubmed.ncbi.nlm.nih.gov/33726816/)) and submitted to [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/?term=SUB8639822)  
-* `KIpathogenic.vcf.gz`: compressed `KIpathogenic.vcf`  
-* `KIpathogenic.vcf.gz.tbi`: the index of `KIpathogenic.vcf.gz`  
-* `KIpathogenic_fixed.vcf.gz`: output file after running `fixvcf.py`  
-* `MIPannotated_KIpathogenic.vcf.gz`: MIP annotated `KIpathogenic_fixed.vcf.gz`
+>`test_MIPannotated_part_clinvar_221113.vcf.gz`: a part of the [public ClinVar](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/weekly/clinvar_20221113.vcf.gz) after MIP annotated  
+>`test_clinvar_info.csv`: output extracted features from input `test_MIPannotated_part_clinvar_221113.vcf.gz`  
+>`test_clinvar_out.vcf.gz`: output with predictions and scores of LG model from input `test_MIPannotated_part_clinvar_221113.vcf.gz`  
+>`KIpathogenic.vcf`: includes 977 pathogenic variants detected by the Genomic Medicine Center Karolinska-Rare Diseases ([GMCK-RD](https://pubmed.ncbi.nlm.nih.gov/33726816/)) and submitted to [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/?term=SUB8639822)   
+>`KIpathogenic.vcf.gz`: compressed `KIpathogenic.vcf`  
+>`KIpathogenic.vcf.gz.tbi`: the index of `KIpathogenic.vcf.gz`  
+>`KIpathogenic_fixed.vcf.gz`: output file after running `fixvcf.py`  
+>`MIPannotated_KIpathogenic.vcf.gz`: MIP annotated `KIpathogenic_fixed.vcf.gz`
 
 
 

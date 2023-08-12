@@ -4,5 +4,5 @@
 LG3 model : `LG3_12feats_CJP.joblib`  
 preprocessor3: `preprocessor3_12feats_CJP.joblib`  
 
-Check the [source code]()  `03_train_LG3.ipynb`
+Check the [source code](https://github.com/nxl365/New_rank_score/blob/main/src/3_ML/02_12_features/03_train_LG3.ipynb)  `03_train_LG3.ipynb`
 

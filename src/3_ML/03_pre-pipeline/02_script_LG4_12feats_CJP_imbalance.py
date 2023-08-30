@@ -257,14 +257,14 @@ print(" 2. finsh: Data preprocessing and prediction")
 
 """ ##  3. Allele frequency filtering :
 
-check if minimum `AF > 0.01` and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing score 
+check if maximum `AF > 0.01` and the model prediction is `pathogenic`, change `pathogenic` to `benign` without changing score 
 """
 
 
 # function:  to get the minimum non-NaN value in a row
 def min_nonnan(row):
     nonnan_vals = [val for val in row if not np.isnan(val)]
-    return min(nonnan_vals) if nonnan_vals else np.nan
+    return max(nonnan_vals) if nonnan_vals else np.nan
 
 
 ## function: transfer `predicted patho`` with any AF>=0.01, to `benign`

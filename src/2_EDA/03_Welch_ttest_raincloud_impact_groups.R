@@ -39,10 +39,44 @@ df_1_m <- df_1 %>%
 box1 <- ggplot(df_1_m, aes(x=var, y=val, fill=CLNSIG)) + 
   geom_flat_violin(aes(fill =CLNSIG),position = position_nudge(x = .1, y = 0), adjust = 1.5, trim = FALSE, alpha = .5, colour = NA)+
   geom_boxplot(aes(x = var, y = val, fill = CLNSIG),outlier.shape = NA, alpha = .5, width = .2, colour = "black")+
-  facet_wrap(~var, scale='free')
+  facet_wrap(~var, scale='free')+
+
+  theme(
+    legend.position = "right",               # Position the legend at the bottom
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15),
+    
+    #axis.text.x = element_text(size = 15),   # Change text size for x-axis
+    axis.text.x = element_blank(),            # remove x text on each facet plot
+    axis.text.y = element_text(size = 15),    # Change text size for y-axis
+    
+    #axis.title.x = element_text(size = 20),  # Change axis title size for x-axis
+    axis.title.x = element_blank(),           # remove x-axis title
+    axis.title.y = element_text(size = 20),   # Change title size for y-axis
+    
+    strip.text = element_text(size = 15))   # Change facet title size  
+              
 
 box1
 
+
+
+
+
+
+##### 1.1  for merge plot
+#install.packages('patchwork')
+library(patchwork)
+
+### if there is `df_2`, make `df2_m`, and get box2 plot
+box2 <- ggplot(df_2_m, aes(x=var, y=val, fill=CLNSIG)) + 
+  geom_flat_violin(aes(fill =CLNSIG),position = position_nudge(x = .1, y = 0), adjust = 1.5, trim = FALSE, alpha = .5, colour = NA)+
+  geom_boxplot(aes(x = var, y = val, fill = CLNSIG),outlier.shape = NA, alpha = .5, width = .2, colour = "black")+
+  facet_wrap(~var, scale='free')+
+
+
+### merge plot by patchwork
+box1/box2  
 
 
 

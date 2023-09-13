@@ -89,23 +89,6 @@ pp_1
 
 
 
-##### 1.1  save by SVG: ensure the clarity even when zoom in significantly.
-#### after install `svglite`,    `ggsave()` will use `svglite` as the backend for SVG output by default
-# install.packages('svglite')
-# library(svglite) 
-
-## save as `.svg` or `.png`, size maybe different, but both can ensure clarity, recommend `.png` With better compatibility 
-ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_heatmap.svg", plot = p1, width = 60, height = 50, units = "cm") 
-ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_heatmap.png", plot = p1, width = 63, height = 45, units = "cm")
-
-
-
-
-
-
-
-
-
 
 
 
@@ -161,7 +144,23 @@ p1
 
 
 
-## save by SVG: ensure the clarity 
+
+
+
+
+##### 3.  Saved by SVG: ensure the clarity even when zoom in significantly.
+#### after install `svglite`,    `ggsave()` will use `svglite` as the backend for SVG output by default
+
+# install.packages('svglite')
+# library(svglite) 
+
+
+## save as `.svg` or `.png`, size maybe different, but both can ensure clarity, recommend `.png` With better compatibility 
+ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_pca.svg", plot = pp_1, width = 50, height = 30, units = "cm")
+ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_pca.png", plot = pp_1, width = 54, height = 30, units = "cm")
+
+
+
 ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_heatmap.svg", plot = p1, width = 60, height = 50, units = "cm")
 ggsave("../../../result/02_data_analysis/06_CSQ/moderate_impact_heatmap.png", plot = p1, width = 63, height = 45, units = "cm")
 

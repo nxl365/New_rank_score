@@ -69,7 +69,11 @@ middle data frame `df_1_m`: <br>
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/df_m.png"  width="400" height="150"> 
 
 ### 1) Rainclouds plot: box + half violin
-<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/1.png" width="600" height="400"> <br>
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/1.png" width="600" height="400"> <be>
+
+### 1).1  merge plots by `patchwork` package
+<img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/fig.1.high-2.jpeg" width="600" height="400"> <be>
+
 
 ### 2) Welch's t-test: not paired, unequal variance
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/03/2.png"  width="600" height="200"> 

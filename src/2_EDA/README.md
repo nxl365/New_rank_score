@@ -104,6 +104,11 @@ pca$x          # check PC scores: correlation between PC  vs  samples
 <img src="https://github.com/nxl365/New_rank_score/blob/main/src/2_EDA/photo/04/2.png" width="600" height="400"> <br>
 
 
+### 3) scalable vector graphics (SVG) 
+outputting to SVG Vector files, make sure the plots' clarity even when zoom in a lot  
+package `svglite`, check code
+
+
 
 ## 05
 original data frame `df_1`: <br>
